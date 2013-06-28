@@ -1,0 +1,5 @@
+c:\users\wuzhenquan\documents\visual studio 2010\Projects\assignment_system2\assignment_system2\bin\assignment_system2.dll
+c:\users\wuzhenquan\documents\visual studio 2010\Projects\assignment_system2\assignment_system2\bin\assignment_system2.pdb
+c:\users\wuzhenquan\documents\visual studio 2010\Projects\assignment_system2\assignment_system2\obj\Debug\ResolveAssemblyReference.cache
+c:\users\wuzhenquan\documents\visual studio 2010\Projects\assignment_system2\assignment_system2\obj\Debug\assignment_system2.dll
+c:\users\wuzhenquan\documents\visual studio 2010\Projects\assignment_system2\assignment_system2\obj\Debug\assignment_system2.pdb
