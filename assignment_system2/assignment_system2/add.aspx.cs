@@ -24,7 +24,8 @@ namespace assignment_system2
         protected void insert_Click(object sender, EventArgs e)
         {
             int flag = 0;
-            System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+            //System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+            System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("Server=353f9297-aa49-4cd5-95f8-a1eb01165a1e.sqlserver.sequelizer.com;Database=db353f9297aa494cd595f8a1eb01165a1e;User ID=ubvrghoyycugbust;Password=ZTw42Tc3u5ZFkEueMvzLFasyUMF4cjBLv3LdChTe86utAbVzTSJQvfnYA6hnmhYk;");
             con.Open();
             string strSql = "select * from tbl_assignment where assignmentid='" + tb_id.Text+"'";
  
@@ -38,7 +39,8 @@ namespace assignment_system2
             }
             else
             {   con.Close();
-                con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+                //con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+                con = new System.Data.SqlClient.SqlConnection("Server=353f9297-aa49-4cd5-95f8-a1eb01165a1e.sqlserver.sequelizer.com;Database=db353f9297aa494cd595f8a1eb01165a1e;User ID=ubvrghoyycugbust;Password=ZTw42Tc3u5ZFkEueMvzLFasyUMF4cjBLv3LdChTe86utAbVzTSJQvfnYA6hnmhYk;");
                 con.Open();
                 strSql = "INSERT INTO [tbl_assignment] ([assignmentid], [teacherid], [title], [chapter], [begintime], [endtime], [type], [status]) VALUES ('"
                     + tb_id.Text + "','" + Session["User_id"].ToString() + "','" + tb_title.Text + "','" + tb_chapter.Text + "','" + cd_begin.SelectedDate + "','" + cd_end.SelectedDate + "'," + tb_type.Text + "," + tb_status.Text + ")";
