@@ -51,7 +51,8 @@ namespace assignment_system2
         protected void all_del_Click(object sender, EventArgs e)
         {
             //批量删除按钮
-            System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+            //System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("server=wuzhenquan-pc\\Sqlexpress;uid=sa;pwd=;database=assignment_system");
+            System.Data.SqlClient.SqlConnection con = new System.Data.SqlClient.SqlConnection("Server=353f9297-aa49-4cd5-95f8-a1eb01165a1e.sqlserver.sequelizer.com;Database=db353f9297aa494cd595f8a1eb01165a1e;User ID=ubvrghoyycugbust;Password=ZTw42Tc3u5ZFkEueMvzLFasyUMF4cjBLv3LdChTe86utAbVzTSJQvfnYA6hnmhYk;");
             con.Open();
             //sql命令
             System.Data.SqlClient.SqlCommand com;            

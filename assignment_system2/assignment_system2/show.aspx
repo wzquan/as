@@ -10,9 +10,9 @@
     </h2>
 <p>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
-            AutoGenerateColumns="False" DataKeyNames="assignmentid" 
-            DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" 
-            GridLines="None">
+            AutoGenerateColumns="False" DataKeyNames="assignmentid" DataSourceID="SqlDataSource1"
+           CellPadding="4" ForeColor="#333333" 
+            GridLines="None">      
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:TemplateField HeaderText="选择">
@@ -54,13 +54,10 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:assignment_systemConnectionString %>" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
             DeleteCommand="DELETE FROM [tbl_assignment] WHERE [assignmentid] = @assignmentid" 
             InsertCommand="INSERT INTO [tbl_assignment] ([assignmentid], [title], [chapter], [begintime], [endtime], [type], [status]) VALUES (@assignmentid, @title, @chapter, @begintime, @endtime, @type, @status)" 
-            SelectCommand="SELECT [assignmentid], [title], [chapter], [begintime], [endtime], [type], [status] FROM [tbl_assignment]" 
-            
-            
-            
+            SelectCommand="SELECT [assignmentid], [title], [chapter], [begintime], [endtime], [type], [status] FROM [tbl_assignment]"                     
             UpdateCommand="UPDATE [tbl_assignment] SET [title] = @title, [chapter] = @chapter, [begintime] = @begintime, [endtime] = @endtime, [type] = @type, [status] = @status WHERE [assignmentid] = @assignmentid">
             <DeleteParameters>
                 <asp:Parameter Name="assignmentid" Type="String" />

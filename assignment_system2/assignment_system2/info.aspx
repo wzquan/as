@@ -142,7 +142,7 @@
             </SelectedItemTemplate>
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:assignment_systemConnectionString %>" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>"        
             DeleteCommand="DELETE FROM [tbl_select] WHERE [assignmentid] = @assignmentid AND [select] = @select" 
             InsertCommand="INSERT INTO [tbl_select] ([assignmentid], [select], [content]) VALUES (@assignmentid, @select, @content)" 
             SelectCommand="SELECT * FROM [tbl_select] WHERE ([assignmentid] = @assignmentid)" 
